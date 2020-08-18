@@ -131,6 +131,16 @@ sudo systemctl start helloworld
 sudo systemctl status helloworld
 ```
 
+### Restart service after uploaded a new file
+```
+ssh user@IP<<EOF
+  sudo systemctl stop helloworld
+  sudo systemctl start helloworld
+  exit
+EOF
+sleep 5
+```
+
 https://www.linode.com/docs/development/java/how-to-deploy-spring-boot-applications-nginx-ubuntu-16-04/
 
 
