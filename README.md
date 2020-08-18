@@ -68,6 +68,17 @@ ng build --prod
 scp -r frontend/dist/my-app/* root@159.65.3.177:/var/www/html
 ```
 
+### Config NGINX with 404
+```
+location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                # try_files $uri $uri/ =404;
+                try_files $uri $uri/ /index.html;
+        }
+```
+
+
 
 Generate keys
 ```
