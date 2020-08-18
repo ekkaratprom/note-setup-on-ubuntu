@@ -90,7 +90,7 @@ cd backend
 ./gradlew bootJar
 
 
-scp backend/build/libs/web_service-0.0.1-SNAPSHOT.jar root@159.89.194.104:/root/demo.jar
+scp backend/build/libs/web_service-0.0.1-SNAPSHOT.jar root@<ip>:/root/demo.jar
 
 ```
 
